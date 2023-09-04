@@ -12,15 +12,25 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="button-close" data-modal-close>X</button>
-        <form action="#">
-          <label for="name">Ім'я</label>
-          <input type="text" name="user_name" id="name" />
-          <label for="email">Пошта</label>
-          <input type="email" name="user_email" id="email" />
-          <label for="phone">Номер телефону</label>
-          <input type="tel" name="user_phone" id="phone" />
-          <label for="comment">Коментар</label>
-          <input type="text" name="user_comment" id="comment" />
+        <form action="#" class="form">
+          <div class="form-group">
+            <label for="name">Ім'я</label>
+            <input type="text" name="user_name" id="name" />
+            <label for="email">Пошта</label>
+            <input type="email" name="user_email" id="email" />
+            <label for="phone">Номер телефону</label>
+            <input type="tel" name="user_phone" id="phone" />
+            <label for="comment">Коментар</label>
+            <textarea
+              name="user-comment"
+              id="comment"
+              cols="70"
+              rows="3"
+            ></textarea>
+          </div>
+          <input type="checkbox" id="check" name="check" />
+          <label for="check">Я перевірив інформацію</label>
+          <button type="submit" class="btn-submit">Надіслати</button>
         </form>
       </div>
     </div>
